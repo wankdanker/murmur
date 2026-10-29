@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Murmur</title>
+<link rel="stylesheet" href="pages.css">
+</head>
+<body class="popup">
+<header><img src="icons/32.png" width="20" height="20" alt=""><strong>Murmur</strong><span id="state" class="pill">Idle</span></header>
+<label>Speech model
+  <select id="model"></select>
+</label>
+<p id="model-note" class="muted"></p>
+<label id="lang-row" hidden>Language (Whisper)
+  <select id="language">
+    <option value="">Auto-detect</option>
+    <option value="english">English</option><option value="spanish">Spanish</option>
+    <option value="french">French</option><option value="german">German</option>
+    <option value="italian">Italian</option><option value="portuguese">Portuguese</option>
+    <option value="dutch">Dutch</option><option value="japanese">Japanese</option>
+    <option value="chinese">Chinese</option><option value="korean">Korean</option>
+    <option value="hindi">Hindi</option><option value="russian">Russian</option>
+  </select>
+</label>
+<label class="check"><input type="checkbox" id="show-button"> Show mic button on text boxes</label>
+<p class="muted">Shortcut: <kbd id="shortcut">Alt+Shift+D</kbd> · <a href="#" id="shortcuts">change</a></p>
+<p class="muted"><a href="#" id="setup">Microphone setup</a> · Audio stays on this device.</p>
+<script type="module" src="popup.js"></script>
+</body>
+</html>

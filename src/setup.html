@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Murmur setup</title>
+<link rel="stylesheet" href="pages.css">
+</head>
+<body class="page">
+<main>
+  <img src="icons/128.png" width="64" height="64" alt="">
+  <h1>Set up Murmur</h1>
+  <p>Murmur turns speech into text in any text box. Recognition runs on this computer, so your audio never leaves it.</p>
+  <ol>
+    <li>Allow microphone access below. Chrome asks once for the extension, not for every site.</li>
+    <li>Click into a text box and press the <strong>mic button</strong> that appears, or press <kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>D</kbd>.</li>
+    <li>Speak. Text is typed when you pause. Click the button again or press <kbd>Esc</kbd> to stop.</li>
+  </ol>
+  <p><button id="grant" class="primary">Allow microphone</button></p>
+  <p id="result" role="status"></p>
+  <p class="muted">The first dictation downloads the speech model (about 60–150 MB) from Hugging Face. After that it works offline.</p>
+</main>
+<script type="module" src="setup.js"></script>
+</body>
+</html>
