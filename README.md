@@ -34,8 +34,9 @@ Chrome only installs packaged `.crx` files from the Chrome Web Store, so outside
 unpacked is the way in. Publishing to the store (as unlisted, if you like) gives one-click installs
 and automatic updates.
 
-To make a versioned release, push a tag: `git tag v0.2.0 && git push origin v0.2.0`. The workflow
-stamps the version into the manifest.
+To make a versioned release, go to **Actions → Build → Run workflow**, enter a version such as
+`0.2.0` and run it. Pushing a tag (`git tag v0.2.0 && git push origin v0.2.0`) does the same. Either
+way the version is stamped into the manifest and `murmur-v0.2.0.zip` is attached to the release.
 
 ## Install (development)
 
