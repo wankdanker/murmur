@@ -23,6 +23,20 @@ time you dictate and are cached after that.
 | Whisper Base | 99 languages | ~77 MB | Choose the language in the popup or let it auto-detect. |
 | Whisper Large v3 Turbo | 99 languages | ~560 MB | Most accurate. WebGPU only. |
 
+## Install
+
+Download `murmur.zip` from the [latest build](https://github.com/wankdanker/murmur/releases/tag/latest)
+(rebuilt on every push to `main`) or from a [versioned release](https://github.com/wankdanker/murmur/releases).
+Unzip it, open `chrome://extensions`, turn on **Developer mode**, click **Load unpacked** and choose
+the unzipped folder. To update, replace the folder's contents and press reload on the extension card.
+
+Chrome only installs packaged `.crx` files from the Chrome Web Store, so outside the store, Load
+unpacked is the way in. Publishing to the store (as unlisted, if you like) gives one-click installs
+and automatic updates.
+
+To make a versioned release, push a tag: `git tag v0.2.0 && git push origin v0.2.0`. The workflow
+stamps the version into the manifest.
+
 ## Install (development)
 
 ```bash
